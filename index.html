@@ -1,0 +1,707 @@
+# SHOP-S-A-B-M-B-M-P-2
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Sữa Bỉm Bé Mập 2 - Sữa Nội, Sữa Ngoại, Combo Sơ Sinh Chính Hãng</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            pink: '#FF6B8B',
+                            lightPink: '#FFF0F3',
+                            yellow: '#FFB800',
+                            red: '#E53E3E',
+                            blue: '#4299E1',
+                            green: '#38A169',
+                            dark: '#2D3748'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Lexend', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Lexend', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .bg-pattern {
+            background-color: #fffaf0;
+            background-image: radial-gradient(#ffe4e6 1.5px, transparent 1.5px);
+            background-size: 24px 24px;
+        }
+        .pulse-btn {
+            animation: pulse-ring 2s infinite;
+        }
+        @keyframes pulse-ring {
+            0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+            70% { box-shadow: 0 0 0 14px rgba(239, 68, 68, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+        }
+        .banner-glow {
+            box-shadow: 0 20px 40px -15px rgba(255, 107, 139, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-pattern text-gray-800 antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="bg-gradient-to-r from-red-600 via-pink-600 to-red-600 text-white text-xs sm:text-sm font-semibold py-2 px-4 text-center shadow-md">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center px-2">
+            <div class="flex items-center gap-2 mx-auto sm:mx-0">
+                <span class="bg-yellow-400 text-red-700 text-xs px-2 py-0.5 rounded-full font-bold uppercase">Khai Trương Đãi Hớn</span>
+                <span>🔥 GIẢM GIÁ 5% - 10% & TẶNG QUÀ CHO BÉ!</span>
+            </div>
+            <div class="hidden md:flex items-center gap-4 text-xs">
+                <span><i class="fa-solid fa-location-dot text-yellow-300 mr-1"></i> Khu Quảng Điền, TT. Quảng Hà, Hải Hà, QN</span>
+                <span><i class="fa-solid fa-phone text-yellow-300 mr-1"></i> 0967.300.687 - 0369.981.296</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN HEADER / NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-md border-b border-pink-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-4">
+            
+            <!-- LOGO & STORE NAME -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-pink-500 to-yellow-400 p-0.5 shadow-md group-hover:scale-105 transition-transform">
+                    <div class="w-full h-full bg-white rounded-[14px] flex items-center justify-center">
+                        <i class="fa-solid fa-baby text-2xl text-pink-500"></i>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="font-extrabold text-xl sm:text-2xl text-red-600 leading-none tracking-tight">
+                        SỮA BỈM BÉ MẬP 2
+                    </h1>
+                    <p class="text-[11px] sm:text-xs text-pink-600 font-medium tracking-wide mt-0.5">
+                        CHUYÊN SỮA NỘI • SỮA NGOẠI • COMBO SƠ SINH
+                    </p>
+                </div>
+            </a>
+
+            <!-- NAV LINKS (DESKTOP) -->
+            <nav class="hidden lg:flex items-center gap-6 font-medium text-sm text-gray-700">
+                <a href="#about" class="hover:text-pink-600 transition">Cửa Hàng</a>
+                <a href="#categories" class="hover:text-pink-600 transition">Danh Mục</a>
+                <a href="#products" class="hover:text-pink-600 transition">Sản Phẩm HOT</a>
+                <a href="#promotions" class="hover:text-pink-600 transition">Ưu Đãi</a>
+                <a href="https://www.facebook.com/share/1Q6GMFSfBx/?mibextid=wwXIfr" target="_blank" class="text-blue-600 hover:text-blue-800 flex items-center gap-1">
+                    <i class="fa-brands fa-facebook text-lg"></i> Fanpage
+                </a>
+            </nav>
+
+            <!-- ACTION BUTTONS: LIÊN HỆ & MUA NGAY -->
+            <div class="flex items-center gap-2 sm:gap-3">
+                <a href="tel:0967300687" class="flex items-center gap-2 bg-pink-100 text-pink-700 hover:bg-pink-200 px-3 py-2 rounded-xl text-xs sm:text-sm font-bold transition">
+                    <i class="fa-solid fa-headset text-pink-600"></i>
+                    <span class="hidden sm:inline">LIÊN HỆ:</span> 0967.300.687
+                </a>
+                
+                <button onclick="openCartModal()" class="relative bg-red-600 hover:bg-red-700 text-white px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-2 shadow-lg shadow-red-200 transition active:scale-95">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>MUA NGAY</span>
+                    <span id="cart-badge" class="bg-yellow-400 text-red-900 text-[10px] font-extrabold px-1.5 py-0.5 rounded-full min-w-[18px] text-center">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION WITH REAL STORE PHOTO -->
+    <section class="relative pt-6 pb-12 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-pink-500 via-red-500 to-pink-600 rounded-3xl p-4 sm:p-8 text-white shadow-2xl relative overflow-hidden">
+                <!-- Decorative background elements -->
+                <div class="absolute -right-10 -bottom-10 w-64 h-64 bg-white/10 rounded-full blur-2xl pointer-events-none"></div>
+                <div class="absolute -left-10 -top-10 w-64 h-64 bg-yellow-400/20 rounded-full blur-2xl pointer-events-none"></div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+                    
+                    <!-- Left Column: Store Branding Info -->
+                    <div class="lg:col-span-6 space-y-4 text-center lg:text-left">
+                        <div class="inline-flex items-center gap-2 bg-yellow-400 text-red-900 px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-extrabold shadow-md">
+                            <i class="fa-solid fa-crown text-red-600"></i> CHUYÊN ĐỒ DÙNG MẸ & BÉ UY TÍN HÀNG ĐẦU
+                        </div>
+                        
+                        <h2 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight">
+                            CHUYÊN SỮA NỘI - SỮA NGOẠI <br class="hidden sm:inline">
+                            <span class="text-yellow-300">COMBO SƠ SINH GIÁ TỐT</span>
+                        </h2>
+
+                        <p class="text-pink-100 text-sm sm:text-base leading-relaxed">
+                            Cung cấp Sữa y tế, Bỉm trẻ em & người già, TPCN, đồ dùng cao cấp cho Mẹ & Bé. Đảm bảo chính hãng 100%, tư vấn tận tâm, giao hàng tận nhà!
+                        </p>
+
+                        <!-- Highlights Banner Text -->
+                        <div class="bg-white/10 backdrop-blur-md rounded-2xl p-4 border border-white/20 text-left space-y-2">
+                            <div class="flex items-start gap-2.5 text-xs sm:text-sm">
+                                <i class="fa-solid fa-circle-check text-yellow-300 mt-1"></i>
+                                <span><strong>Địa chỉ:</strong> Khu Quảng Điền - TT. Quảng Hà - Hải Hà - Quảng Ninh</span>
+                            </div>
+                            <div class="flex items-start gap-2.5 text-xs sm:text-sm">
+                                <i class="fa-solid fa-phone-volume text-yellow-300 mt-1"></i>
+                                <span><strong>Hotline đặt hàng:</strong> <a href="tel:0967300687" class="underline font-bold text-yellow-300">0967.300.687</a> - <a href="tel:0369981296" class="underline font-bold text-yellow-300">0369.981.296</a></span>
+                            </div>
+                        </div>
+
+                        <!-- CTA BUTTONS -->
+                        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+                            <a href="tel:0967300687" class="pulse-btn bg-yellow-400 hover:bg-yellow-300 text-red-900 font-extrabold px-6 py-3.5 rounded-2xl shadow-xl flex items-center gap-3 transition transform hover:-translate-y-0.5 text-base">
+                                <i class="fa-solid fa-phone-volume text-xl"></i>
+                                <span>LIÊN HỆ NGAY</span>
+                            </a>
+                            <a href="#products" class="bg-white text-red-600 hover:bg-pink-50 font-extrabold px-6 py-3.5 rounded-2xl shadow-lg flex items-center gap-2 transition transform hover:-translate-y-0.5 text-base">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                <span>XEM SẢN PHẨM</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Real Store Photo Showcase -->
+                    <div class="lg:col-span-6">
+                        <div class="relative rounded-2xl overflow-hidden border-4 border-white/80 shadow-2xl group bg-slate-900">
+                            <!-- Store Image Embed -->
+                            <img src="2aOboR8Sm3Aqa9Zt8rWWNKZNTwsqdxlgfC671tKa_3.jpg" 
+                                 alt="Cửa Hàng Sữa Bỉm Bé Mập 2 Quảng Hà" 
+                                 class="w-full h-[280px] sm:h-[380px] object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                                 onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=1000&q=80';">
+                            
+                            <!-- Image Overlay Badge -->
+                            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 text-white flex justify-between items-end">
+                                <div>
+                                    <span class="bg-red-600 text-xs px-2.5 py-1 rounded-md font-bold uppercase tracking-wider">Hình Ảnh Thực Tế</span>
+                                    <p class="font-bold text-sm sm:text-base mt-1">Cửa Hàng Sữa Bỉm Bé Mập 2 - Khai Trương Rực Rỡ</p>
+                                </div>
+                                <a href="https://www.facebook.com/share/1Q6GMFSfBx/?mibextid=wwXIfr" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white text-xs px-3 py-2 rounded-lg font-semibold flex items-center gap-1">
+                                    <i class="fa-brands fa-facebook"></i> Xem FB
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUICK CATEGORIES -->
+    <section id="categories" class="py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-8">
+                <h3 class="text-2xl sm:text-3xl font-extrabold text-gray-900">DANH MỤC SẢN PHẨM CHÍNH</h3>
+                <p class="text-gray-500 text-sm mt-1">Đầy đủ chủng loại sữa, bỉm và đồ dùng cho Mẹ & Bé với giá cực kỳ ưu đãi</p>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+                
+                <!-- Cat 1 -->
+                <div onclick="filterCategory('sua-noi')" class="cursor-pointer bg-white p-4 rounded-2xl border border-pink-100 text-center hover:border-pink-500 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 mx-auto bg-pink-50 rounded-2xl flex items-center justify-center text-pink-600 text-2xl group-hover:bg-pink-500 group-hover:text-white transition">
+                        <i class="fa-solid fa-bottle-droplet"></i>
+                    </div>
+                    <h4 class="font-bold text-sm text-gray-800 mt-3 group-hover:text-pink-600">Sữa Nội</h4>
+                    <p class="text-[11px] text-gray-400 mt-0.5">Vinamilk, Nutifood...</p>
+                </div>
+
+                <!-- Cat 2 -->
+                <div onclick="filterCategory('sua-ngoai')" class="cursor-pointer bg-white p-4 rounded-2xl border border-pink-100 text-center hover:border-pink-500 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 mx-auto bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 text-2xl group-hover:bg-blue-500 group-hover:text-white transition">
+                        <i class="fa-solid fa-earth-americas"></i>
+                    </div>
+                    <h4 class="font-bold text-sm text-gray-800 mt-3 group-hover:text-blue-600">Sữa Ngoại</h4>
+                    <p class="text-[11px] text-gray-400 mt-0.5">Meiji, Aptamil, Nan...</p>
+                </div>
+
+                <!-- Cat 3 -->
+                <div onclick="filterCategory('sua-y-te')" class="cursor-pointer bg-white p-4 rounded-2xl border border-pink-100 text-center hover:border-pink-500 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 mx-auto bg-green-50 rounded-2xl flex items-center justify-center text-green-600 text-2xl group-hover:bg-green-500 group-hover:text-white transition">
+                        <i class="fa-solid fa-notes-medical"></i>
+                    </div>
+                    <h4 class="font-bold text-sm text-gray-800 mt-3 group-hover:text-green-600">Sữa Y Tế</h4>
+                    <p class="text-[11px] text-gray-400 mt-0.5">Tăng cân, Tiêu hóa tốt</p>
+                </div>
+
+                <!-- Cat 4 -->
+                <div onclick="filterCategory('bim')" class="cursor-pointer bg-white p-4 rounded-2xl border border-pink-100 text-center hover:border-pink-500 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 mx-auto bg-yellow-50 rounded-2xl flex items-center justify-center text-yellow-600 text-2xl group-hover:bg-yellow-500 group-hover:text-white transition">
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+                    <h4 class="font-bold text-sm text-gray-800 mt-3 group-hover:text-yellow-600">Bỉm Trẻ Em & Người Già</h4>
+                    <p class="text-[11px] text-gray-400 mt-0.5">Moony, Bobby, Huggies</p>
+                </div>
+
+                <!-- Cat 5 -->
+                <div onclick="filterCategory('combo')" class="cursor-pointer bg-white p-4 rounded-2xl border border-pink-100 text-center hover:border-pink-500 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 mx-auto bg-purple-50 rounded-2xl flex items-center justify-center text-purple-600 text-2xl group-hover:bg-purple-500 group-hover:text-white transition">
+                        <i class="fa-solid fa-gift"></i>
+                    </div>
+                    <h4 class="font-bold text-sm text-gray-800 mt-3 group-hover:text-purple-600">Combo Sơ Sinh</h4>
+                    <p class="text-[11px] text-gray-400 mt-0.5">Trọn gói cho bé yêu</p>
+                </div>
+
+                <!-- Cat 6 -->
+                <div onclick="filterCategory('tpcn')" class="cursor-pointer bg-white p-4 rounded-2xl border border-pink-100 text-center hover:border-pink-500 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 mx-auto bg-red-50 rounded-2xl flex items-center justify-center text-red-600 text-2xl group-hover:bg-red-500 group-hover:text-white transition">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h4 class="font-bold text-sm text-gray-800 mt-3 group-hover:text-red-600">TPCN & Đồ Dùng</h4>
+                    <p class="text-[11px] text-gray-400 mt-0.5">Vitamin, Bình sữa...</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS SHOWCASE -->
+    <section id="products" class="py-10 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+                <div>
+                    <span class="text-pink-600 font-bold text-xs uppercase tracking-widest">Sản Phẩm Chọn Lọc</span>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-gray-900">SỮA & BỈM HOT NHẤT TẠI SHOP</h3>
+                </div>
+                <!-- Filter Tabs -->
+                <div class="flex flex-wrap gap-2 text-xs font-bold">
+                    <button onclick="filterCategory('all')" class="cat-btn active bg-pink-600 text-white px-4 py-2 rounded-xl">Tất Cả</button>
+                    <button onclick="filterCategory('sua-ngoai')" class="cat-btn bg-gray-100 text-gray-700 hover:bg-pink-100 px-4 py-2 rounded-xl">Sữa Ngoại</button>
+                    <button onclick="filterCategory('sua-y-te')" class="cat-btn bg-gray-100 text-gray-700 hover:bg-pink-100 px-4 py-2 rounded-xl">Sữa Y Tế</button>
+                    <button onclick="filterCategory('bim')" class="cat-btn bg-gray-100 text-gray-700 hover:bg-pink-100 px-4 py-2 rounded-xl">Bỉm Bé & Người Già</button>
+                </div>
+            </div>
+
+            <!-- PRODUCT GRID -->
+            <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Products dynamically rendered by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- STORE PROMOTIONS & COMMITMENTS -->
+    <section id="promotions" class="py-12 bg-pink-50/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-red-600 to-pink-600 rounded-3xl p-6 sm:p-10 text-white shadow-xl relative overflow-hidden">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                    
+                    <div class="p-4 bg-white/10 rounded-2xl backdrop-blur-sm border border-white/20">
+                        <div class="w-12 h-12 mx-auto bg-yellow-400 text-red-900 rounded-full flex items-center justify-center text-xl font-bold mb-3">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h4 class="font-bold text-lg">100% CHÍNH HÃNG</h4>
+                        <p class="text-xs text-pink-100 mt-1">Cam kết nguồn gốc xuất xứ rõ ràng, có đầy đủ hóa đơn chứng từ.</p>
+                    </div>
+
+                    <div class="p-4 bg-white/10 rounded-2xl backdrop-blur-sm border border-white/20">
+                        <div class="w-12 h-12 mx-auto bg-yellow-400 text-red-900 rounded-full flex items-center justify-center text-xl font-bold mb-3">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </div>
+                        <h4 class="font-bold text-lg">GIAO HÀNG TẬN NƠI</h4>
+                        <p class="text-xs text-pink-100 mt-1">Giao nhanh tại khu vực TT. Quảng Hà, Hải Hà và ship COD toàn quốc.</p>
+                    </div>
+
+                    <div class="p-4 bg-white/10 rounded-2xl backdrop-blur-sm border border-white/20">
+                        <div class="w-12 h-12 mx-auto bg-yellow-400 text-red-900 rounded-full flex items-center justify-center text-xl font-bold mb-3">
+                            <i class="fa-solid fa-percent"></i>
+                        </div>
+                        <h4 class="font-bold text-lg">ƯU ĐÃI HẤP DẪN</h4>
+                        <p class="text-xs text-pink-100 mt-1">Giảm 5% - 10% kèm tích điểm quà tặng cực lớn cho bé yêu.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER WITH FULL CONTACT INFO -->
+    <footer id="about" class="bg-gray-900 text-gray-300 pt-12 pb-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                
+                <!-- Col 1: Store info -->
+                <div class="space-y-4">
+                    <h4 class="text-xl font-extrabold text-white flex items-center gap-2">
+                        <i class="fa-solid fa-baby text-pink-500"></i> SỮA BỈM BÉ MẬP 2
+                    </h4>
+                    <p class="text-xs text-gray-400 leading-relaxed">
+                        Hệ thống cửa hàng Mẹ & Bé chuyên nghiệp, uy tín tại Quảng Hà - Hải Hà. Nơi đồng hành cùng sự phát triển khỏe mạnh của con yêu.
+                    </p>
+                    <div class="flex items-center gap-3 pt-2">
+                        <a href="https://www.facebook.com/share/1Q6GMFSfBx/?mibextid=wwXIfr" target="_blank" class="w-9 h-9 bg-blue-600 rounded-full flex items-center justify-center text-white hover:bg-blue-700 transition">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="tel:0967300687" class="w-9 h-9 bg-green-600 rounded-full flex items-center justify-center text-white hover:bg-green-700 transition">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div>
+                    <h5 class="font-bold text-white text-sm mb-4 border-l-4 border-pink-500 pl-2">SẢN PHẨM PHỦ RỘNG</h5>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#products" class="hover:text-pink-400">Sữa Nội & Sữa Ngoại nhập khẩu</a></li>
+                        <li><a href="#products" class="hover:text-pink-400">Sữa Y Tế chuyên khoa cho bé</a></li>
+                        <li><a href="#products" class="hover:text-pink-400">Bỉm trẻ em & Bỉm người già</a></li>
+                        <li><a href="#products" class="hover:text-pink-400">Combo đồ dùng trọn gói sơ sinh</a></li>
+                        <li><a href="#products" class="hover:text-pink-400">Thực phẩm chức năng cho Mẹ & Bé</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Contact details -->
+                <div>
+                    <h5 class="font-bold text-white text-sm mb-4 border-l-4 border-pink-500 pl-2">THÔNG TIN LIÊN HỆ</h5>
+                    <ul class="space-y-3 text-xs">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-location-dot text-pink-500 mt-0.5"></i>
+                            <span>Khu Quảng Điền - TT. Quảng Hà - Hải Hà - Quảng Ninh</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-phone text-pink-500"></i>
+                            <span class="font-bold text-white">Hotline 1: 0967.300.687</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-phone-flip text-pink-500"></i>
+                            <span class="font-bold text-white">Hotline 2: 0369.981.296</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-brands fa-facebook text-pink-500"></i>
+                            <a href="https://www.facebook.com/share/1Q6GMFSfBx/?mibextid=wwXIfr" target="_blank" class="hover:underline text-blue-400">Ghé thăm Fanpage Facebook</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Store hours -->
+                <div>
+                    <h5 class="font-bold text-white text-sm mb-4 border-l-4 border-pink-500 pl-2">THỜI GIAN MỞ CỬA</h5>
+                    <p class="text-xs text-gray-400 mb-2">Phục vụ quý khách tất cả các ngày trong tuần (Kể cả Lễ, Tết):</p>
+                    <p class="text-sm font-bold text-yellow-400">07:00 AM - 21:30 PM</p>
+                    <div class="mt-4 pt-3 border-t border-gray-800">
+                        <a href="tel:0967300687" class="block w-full text-center bg-red-600 hover:bg-red-700 text-white font-bold py-2.5 rounded-xl text-xs transition">
+                            <i class="fa-solid fa-headset mr-1"></i> GỌI TƯ VẤN MIỄN PHÍ
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="border-t border-gray-800 pt-6 text-center text-xs text-gray-500">
+                <p>© 2026 Shop Sữa Bỉm Bé Mập 2 - Quảng Hà, Hải Hà, Quảng Ninh. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING CONTACT WIDGET (BOTTOM RIGHT) -->
+    <div class="fixed bottom-5 right-5 z-50 flex flex-col gap-3">
+        <!-- Facebook floating button -->
+        <a href="https://www.facebook.com/share/1Q6GMFSfBx/?mibextid=wwXIfr" target="_blank" 
+           class="w-12 h-12 bg-blue-600 hover:bg-blue-700 text-white rounded-full flex items-center justify-center shadow-2xl transition transform hover:scale-110" 
+           title="Facebook Cửa Hàng">
+            <i class="fa-brands fa-facebook-f text-xl"></i>
+        </a>
+
+        <!-- Phone call floating button -->
+        <a href="tel:0967300687" 
+           class="pulse-btn w-12 h-12 bg-red-600 hover:bg-red-700 text-white rounded-full flex items-center justify-center shadow-2xl transition transform hover:scale-110" 
+           title="Gọi điện đặt hàng ngay">
+            <i class="fa-solid fa-phone text-xl"></i>
+        </a>
+    </div>
+
+    <!-- CART MODAL / SHOPPING BAG -->
+    <div id="cart-modal" class="fixed inset-0 z-50 hidden bg-black/60 backdrop-blur-sm flex justify-end">
+        <div class="bg-white w-full max-w-md h-full flex flex-col shadow-2xl animate-slide-left">
+            <!-- Modal Header -->
+            <div class="p-4 bg-pink-600 text-white flex justify-between items-center">
+                <h3 class="font-extrabold text-lg flex items-center gap-2">
+                    <i class="fa-solid fa-cart-shopping"></i> GIỎ HÀNG CỦA BẠN
+                </h3>
+                <button onclick="closeCartModal()" class="w-8 h-8 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center text-white">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Modal Content -->
+            <div id="cart-items" class="flex-1 overflow-y-auto p-4 space-y-3">
+                <!-- Cart items load here dynamically -->
+            </div>
+
+            <!-- Modal Footer / Order Form -->
+            <div class="p-4 bg-gray-50 border-t border-gray-200 space-y-3">
+                <div class="flex justify-between items-center text-base font-extrabold text-gray-900">
+                    <span>TỔNG TIỀN TẠM TÍNH:</span>
+                    <span id="cart-total" class="text-red-600 text-xl">0 đ</span>
+                </div>
+
+                <div class="space-y-2">
+                    <input type="text" id="cust-name" placeholder="Họ và tên của bạn *" class="w-full text-xs p-2.5 rounded-xl border border-gray-300 focus:outline-none focus:border-pink-500">
+                    <input type="tel" id="cust-phone" placeholder="Số điện thoại nhận hàng *" class="w-full text-xs p-2.5 rounded-xl border border-gray-300 focus:outline-none focus:border-pink-500">
+                    <input type="text" id="cust-address" placeholder="Địa chỉ giao hàng *" class="w-full text-xs p-2.5 rounded-xl border border-gray-300 focus:outline-none focus:border-pink-500">
+                </div>
+
+                <button onclick="submitOrder()" class="w-full bg-red-600 hover:bg-red-700 text-white font-extrabold py-3 rounded-xl shadow-lg transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-paper-plane"></i> GỬI ĐƠN HÀNG NGAY
+                </button>
+                <p class="text-[10px] text-center text-gray-500">Hoặc gọi trực tiếp Hotline <strong>0967.300.687</strong> để chốt đơn nhanh</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // Sample Product Data
+        const products = [
+            {
+                id: 1,
+                name: "Sữa Aptamil Australia Số 1 (0-6 tháng)",
+                category: "sua-ngoai",
+                price: 850000,
+                priceOld: 890000,
+                image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=500&q=80",
+                badge: "Bán Chạy"
+            },
+            {
+                id: 2,
+                name: "Sữa Meiji Nội Địa Nhật Số 0 (0-1 tuổi)",
+                category: "sua-ngoai",
+                price: 520000,
+                priceOld: 560000,
+                image: "https://images.unsplash.com/photo-1550572017-edf7063a569c?auto=format&fit=crop&w=500&q=80",
+                badge: "Nhập Khẩu"
+            },
+            {
+                id: 3,
+                name: "Sữa Y Tế Pha Sẵn Chuyên Khẩu Cho Trẻ Biếng Ăn",
+                category: "sua-y-te",
+                price: 380000,
+                priceOld: 420000,
+                image: "https://images.unsplash.com/photo-1563636619-e9143da7973b?auto=format&fit=crop&w=500&q=80",
+                badge: "Khuyên Dùng"
+            },
+            {
+                id: 4,
+                name: "Tã Bỉm Dán Moony Natural Size S (58 miếng)",
+                category: "bim",
+                price: 360000,
+                priceOld: 395000,
+                image: "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=500&q=80",
+                badge: "Mềm Mại"
+            },
+            {
+                id: 5,
+                name: "Bỉm Quần Cho Người Già / Người Lớn Tuổi",
+                category: "bim",
+                price: 185000,
+                priceOld: 210000,
+                image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=500&q=80",
+                badge: "Tiện Lợi"
+            },
+            {
+                id: 6,
+                name: "Combo Trọn Gói Sơ Sinh Đô Dùng Cho Bé Yêu (15 Món)",
+                category: "combo",
+                price: 1250000,
+                priceOld: 1450000,
+                image: "https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=500&q=80",
+                badge: "Tiết Kiệm 20%"
+            },
+            {
+                id: 7,
+                name: "Sữa Nan Optipro Số 1 (400g)",
+                category: "sua-noi",
+                price: 245000,
+                priceOld: 270000,
+                image: "https://images.unsplash.com/photo-1550572017-edf7063a569c?auto=format&fit=crop&w=500&q=80",
+                badge: "Mát Lành"
+            },
+            {
+                id: 8,
+                name: "Vitamin D3 K2 Lineabon Cho Bé Sơ Sinh",
+                category: "tpcn",
+                price: 295000,
+                priceOld: 320000,
+                image: "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?auto=format&fit=crop&w=500&q=80",
+                badge: "Chính Hãng"
+            }
+        ];
+
+        let cart = [];
+
+        // Format Currency
+        function formatMoney(amount) {
+            return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(amount);
+        }
+
+        // Render Product Cards
+        function renderProducts(items) {
+            const container = document.getElementById('product-grid');
+            container.innerHTML = '';
+
+            items.forEach(prod => {
+                const card = document.createElement('div');
+                card.className = "bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group";
+                card.innerHTML = `
+                    <div>
+                        <div class="relative overflow-hidden bg-gray-50 h-48">
+                            <span class="absolute top-3 left-3 bg-red-600 text-white text-[10px] font-extrabold px-2 py-0.5 rounded-full z-10 shadow-sm">${prod.badge}</span>
+                            <img src="${prod.image}" alt="${prod.name}" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-sm text-gray-800 line-clamp-2 h-10 group-hover:text-pink-600 transition">${prod.name}</h4>
+                            <div class="mt-2 flex items-baseline gap-2">
+                                <span class="text-base font-extrabold text-red-600">${formatMoney(prod.price)}</span>
+                                ${prod.priceOld ? `<span class="text-xs text-gray-400 line-through">${formatMoney(prod.priceOld)}</span>` : ''}
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-4 pt-0 grid grid-cols-2 gap-2 mt-2">
+                        <a href="tel:0967300687" class="text-center bg-pink-50 hover:bg-pink-100 text-pink-700 font-bold py-2 px-2 rounded-xl text-xs transition flex items-center justify-center gap-1">
+                            <i class="fa-solid fa-phone"></i> Liên Hệ
+                        </a>
+                        <button onclick="addToCart(${prod.id})" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-2 rounded-xl text-xs transition shadow-md shadow-red-100 flex items-center justify-center gap-1">
+                            <i class="fa-solid fa-cart-plus"></i> Mua Ngay
+                        </button>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        // Filter Products Category
+        function filterCategory(cat) {
+            // Update active tab styles
+            document.querySelectorAll('.cat-btn').forEach(btn => {
+                btn.classList.remove('bg-pink-600', 'text-white');
+                btn.classList.add('bg-gray-100', 'text-gray-700');
+            });
+            
+            if (event && event.target.classList.contains('cat-btn')) {
+                event.target.classList.remove('bg-gray-100', 'text-gray-700');
+                event.target.classList.add('bg-pink-600', 'text-white');
+            }
+
+            if(cat === 'all') {
+                renderProducts(products);
+            } else {
+                const filtered = products.filter(p => p.category === cat);
+                renderProducts(filtered);
+            }
+        }
+
+        // Add Product To Cart
+        function addToCart(id) {
+            const item = products.find(p => p.id === id);
+            const exist = cart.find(c => c.id === id);
+            
+            if(exist) {
+                exist.qty += 1;
+            } else {
+                cart.push({ ...item, qty: 1 });
+            }
+
+            updateCartUI();
+            openCartModal();
+        }
+
+        // Update Cart Interface
+        function updateCartUI() {
+            const badge = document.getElementById('cart-badge');
+            const container = document.getElementById('cart-items');
+            const totalEl = document.getElementById('cart-total');
+
+            const totalCount = cart.reduce((sum, item) => sum + item.qty, 0);
+            badge.innerText = totalCount;
+
+            if(cart.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-12 text-gray-400">
+                        <i class="fa-solid fa-basket-shopping text-4xl mb-3 text-pink-200"></i>
+                        <p class="text-sm">Giỏ hàng của bạn đang trống</p>
+                    </div>
+                `;
+                totalEl.innerText = formatMoney(0);
+                return;
+            }
+
+            let totalMoney = 0;
+            container.innerHTML = '';
+
+            cart.forEach((item, index) => {
+                totalMoney += item.price * item.qty;
+                const div = document.createElement('div');
+                div.className = "flex items-center justify-between bg-gray-50 p-3 rounded-xl border border-gray-200 gap-3";
+                div.innerHTML = `
+                    <img src="${item.image}" class="w-12 h-12 object-cover rounded-lg">
+                    <div class="flex-1">
+                        <h5 class="font-bold text-xs text-gray-800 line-clamp-1">${item.name}</h5>
+                        <p class="text-xs text-red-600 font-bold mt-0.5">${formatMoney(item.price)}</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <button onclick="changeQty(${index}, -1)" class="w-6 h-6 rounded-md bg-white border border-gray-300 text-xs font-bold">-</button>
+                        <span class="text-xs font-bold">${item.qty}</span>
+                        <button onclick="changeQty(${index}, 1)" class="w-6 h-6 rounded-md bg-white border border-gray-300 text-xs font-bold">+</button>
+                    </div>
+                `;
+                container.appendChild(div);
+            });
+
+            totalEl.innerText = formatMoney(totalMoney);
+        }
+
+        function changeQty(index, delta) {
+            cart[index].qty += delta;
+            if(cart[index].qty <= 0) {
+                cart.splice(index, 1);
+            }
+            updateCartUI();
+        }
+
+        function openCartModal() {
+            document.getElementById('cart-modal').classList.remove('hidden');
+        }
+
+        function closeCartModal() {
+            document.getElementById('cart-modal').classList.add('hidden');
+        }
+
+        function submitOrder() {
+            const name = document.getElementById('cust-name').value.trim();
+            const phone = document.getElementById('cust-phone').value.trim();
+            const address = document.getElementById('cust-address').value.trim();
+
+            if(cart.length === 0) {
+                alert('Vui lòng chọn ít nhất 1 sản phẩm vào giỏ hàng!');
+                return;
+            }
+
+            if(!name || !phone || !address) {
+                alert('Vui lòng điền đầy đủ Tên, Số điện thoại và Địa chỉ nhận hàng!');
+                return;
+            }
+
+            alert(`Cảm ơn ${name}! Đơn hàng của bạn đã được gửi thành công đến Cửa Hàng Sữa Bỉm Bé Mập 2.\nChúng tôi sẽ gọi đến số ${phone} để xác nhận giao hàng ngay!`);
+            cart = [];
+            updateCartUI();
+            closeCartModal();
+        }
+
+        // Initial Load
+        window.onload = function() {
+            renderProducts(products);
+        };
+    </script>
+</body>
+</html>
